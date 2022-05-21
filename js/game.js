@@ -14,7 +14,7 @@ function nextSequence() {
     userClickedPattern = [];
 
     level++;
-    $("#level-title").html("Level" + level);
+    $("#level-title").html("Level " + level);
 
     var randomNumber = Math.floor(Math.random() * 4);
     var randomChosenColor = buttonColours[randomNumber];
@@ -49,7 +49,7 @@ function animatePress(currentColour) {
 
 $(document).on("keydown", () => {
     if(!started){
-        $("#level-title").html("Level" + level);
+        $("#level-title").html("Level " + level);
         nextSequence();
         started = true;
     }
